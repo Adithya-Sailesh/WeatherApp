@@ -1,0 +1,105 @@
+
+body {
+    background: linear-gradient(-43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes drop{
+    from{transform: translateY(550px);}
+    to{transform: translateY(0px);}
+}
+@keyframes up{
+    from{transform: translateY(-550px);}
+    to{transform: translateY(0px);}
+}
+.screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.screen1{
+    animation-name: drop;
+    animation-duration: 1s;
+    font-family: 'Dela Gothic One','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    /* font-size: 5vw; */
+    font-size: 2vmax;
+    color: rgb(179, 219, 255);
+}
+.screen2{
+    animation-name: up;
+    animation-duration: 1.3s;
+    background-color: aliceblue;
+    width: 60vw;
+    height: 65vh;
+
+    max-height: 500px;
+    border-radius: 20px;
+}
+.container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#citydisplay{
+    font-size: 1.8rem;
+    margin: 0px;
+    margin-top: 10px;
+    font-family: 'Teko','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+#cityname{
+    min-width: max-content;
+    width: 50%;
+    height: 2rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.searchbtn{
+    margin-top: 10px;
+    border-radius: 2px;
+    min-width: fit-content;
+    width: 20%;
+    height: 2rem;
+    font-size: 18px;
+    border:2px solid transparent;
+    font-family: 'Dela Gothic One','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    background-color: #7d8cd6;
+}
+.searchbtn:hover{
+    border: 2px solid blue;
+    background-color:#456694 ;
+    transform: scale(1.1);
+}
+.temp{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color:#dd56d4;
+    width: 50%;
+}
+.temp h3{
+    margin: 5px;
+    color: whitesmoke;
+}
+.intemp{
+    display: flex;
+    flex-direction: row;
+}

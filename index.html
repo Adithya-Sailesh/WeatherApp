@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="screen1">
+            <h1>Weather App</h1>
+        </div>
+        <div class="screen2">
+            <div class="container">
+                <input type="text" name="city" id="cityname" placeholder="Enter the city name">
+                <button class="searchbtn">Search</button>
+                <h3 id="citydisplay"></h3>
+                <div class="icondisplay">
+                </div>
+                <div class="temp">
+                        <h3 id="Current">Current Temp : -- <sup>C</sup></h3> 
+                        <h3 id="Feels">Feels Like : -- <sup>C</sup></h3>
+                        <h3 id="Comments"></h3>              
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+    
+</body>
+</html>
